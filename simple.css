@@ -16,8 +16,8 @@
 
 .icon{
 	display: inline-block;
-	width: 45%;
-	height: 15%;
+	width: 30%;
+	height: 25%;
 	margin-bottom: 5%;	
 }
 
@@ -29,7 +29,8 @@ footer{
 	text-align: center;
 	width: 100%;
 	display: inline-block;
-	padding-top: 7%
+	margin-top: 10%;
+	bottom: 0;
 }
 
 /*Mobile */
@@ -43,7 +44,7 @@ footer{
 
 }
 .icon img{
-	max-width: 30%;
+	max-width: 35%;
 	vertical-align: middle;
 	margin-right: 2%;
 
@@ -52,9 +53,10 @@ footer{
 .icon{
 	display: inline-block;
 	width: 60%;
-	height: 10%;
+	height: 30%;
 	margin-bottom: 5%;
 	vertical-align: top;
+	margin-top: 7%;
 
 }
 html, body {
