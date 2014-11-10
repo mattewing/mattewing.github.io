@@ -41,6 +41,8 @@ nav .icon img{
 	max-width: 30%;
 	vertical-align: middle;
 	margin-right: 4%;
+	min-height: 55px;
+	min-width: 55px;
 }
 
 nav .icon{
@@ -83,6 +85,15 @@ li{
 	font-size: 16px;
 }
 
+/* Ipad*/
+@media all and (max-width: 875px) {
+	.nav_text{
+		display: none;
+	}
+	.icon{
+		margin-left: 10%
+	}
+}
 /* Mobile*/
 @media all and (max-width: 600px) {
 	header{

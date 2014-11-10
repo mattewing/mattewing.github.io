@@ -4,13 +4,16 @@
 	width: 40%;
 	padding-left: 5%;
 	float: left;
+	max-width: 550px;
 	 
 }
 
 .icon img{
 	max-width: 25%;
 	vertical-align: middle;
-	margin-right: 2%
+	margin-right: 2%;
+	min-height: 65px;
+	min-width: 65px;
 
 }
 
@@ -18,7 +21,9 @@
 	display: inline-block;
 	width: 30%;
 	height: 25%;
-	margin-bottom: 5%;	
+	margin-bottom: 5%;
+	text-align: center;
+	margin-top: 7%;
 }
 
 
@@ -30,7 +35,14 @@ footer{
 	width: 100%;
 	display: inline-block;
 	margin-top: 10%;
-	bottom: 0;
+
+}
+
+/*ipad */
+@media all and (max-width: 850px) {
+.bio_bar{
+	width:65%;
+}
 }
 
 /*Mobile */
@@ -49,6 +61,7 @@ footer{
 	margin-right: 2%;
 
 
+
 }
 .icon{
 	display: inline-block;
@@ -57,6 +70,7 @@ footer{
 	margin-bottom: 5%;
 	vertical-align: top;
 	margin-top: 7%;
+
 
 }
 html, body {
