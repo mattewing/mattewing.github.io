@@ -11,7 +11,7 @@
 .icon img{
 	max-width: 25%;
 	vertical-align: middle;
-	margin-right: 2%;
+	margin-right: 0%;
 	min-height: 65px;
 	min-width: 65px;
 
@@ -22,8 +22,8 @@
 	width: 30%;
 	height: 25%;
 	margin-bottom: 5%;
-	text-align: center;
 	margin-top: 7%;
+	text-align: center;
 }
 
 
