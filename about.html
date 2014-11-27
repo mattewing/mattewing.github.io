@@ -2,10 +2,11 @@
 <html prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
 <head>
   <meta charset="utf-8" name="viewport" content="width=device-width"> 
-  <title>about</title>
+  <title>Matt Ewing--About</title>
+   <meta name="description" content="Matt Ewing's home on the world wide web. Founder at Scoot Networks and New Media Ventures. Former National Field Director at MoveOn.org.I love to build stuff that matters.">
   <link rel="stylesheet" href="sub_page.css">
   <link href='http://fonts.googleapis.com/css?family=Varela|Varela+Round' rel='stylesheet' type='text/css'>
-  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
   <!--facebook/twitter metadata -->
     <meta property="og:type" content="website"/>
@@ -22,52 +23,37 @@
 <!--Header menu bar for mobile-->
 <header>
 
-<h1>&lt; ME &gt;</h1>
+<i class="fa fa-bars fa-2x"></i>
 
 </header>
 
-<!--Nav bar-->
-<div class = "nav_wrapper">
-<nav>
-
 
 <!--nav bar-->
-
-	<div class ="icon">	
+<nav>	
+	<div class ="icon">
 	<a href="index.html">
-	<img src="assets/bolt.png" alt="home"> 
-	<span class="nav_text">Main</span></a>
+		<span class="fa-stack fa-fw">
+		<i class="fa fa-square fa-stack-2x"></i>
+		<i class="fa fa-home fa-stack-1x fa-inverse"></i>
+		</span>
+		<span class="nav_text">&nbsp;Main</span>
+	</a>
+	</div>
+	
+	<div class ="icon">	
+	<a href="http://mattewing.github.io/blog/">	
+	<span class="fa-stack fa-fw"> <i class="fa fa-pencil-square fa-2x"> </i> </span>
+	<span class="nav_text">&nbsp;Blog</span></a>
 	</div>
 
 	<div class ="icon">	
-	<a href="http://mattewing.github.io/blog/">
-	<img src="assets/pencil.png" alt="blog"> 
-	<span class="nav_text">Blog</span></a>
-	</div>
-<!--	
-	<div class ="icon">
-	<a href="projects.html">
-	<img src="assets/wrench.png" alt="projects">
-	<span class="nav_text">Projects</span>
-	</a>
-	</div>
-
-	<div class ="icon">
-	<a href="https://www.linkedin.com/in/mattewing">
-	<img src="assets/linkedin_black.png" alt="linkedin"> 
-	<span class="nav_text">LinkedIn</span>
-	</a>
-	</div>
--->
-	<div class ="icon">
-	<a href="https://twitter.com/mattewing">	
-	<img src="assets/twitter.png" alt="twitter">
-	<span class="nav_text">Twitter</span>
-	</a>
+	<a href="http://twitter.com/mattewing">
+	<span class="fa-stack fa-fw"><i class="fa fa-twitter-square fa-2x"></i></span>
+	<span class="nav_text">&nbsp;Twitter</span></a>
 	</div>
 
 </nav>
-</div>
+
 
 
 <!-- Main content -->
@@ -96,15 +82,25 @@
 	<li>I've also had the privilege  to serve as an early advisor to some amazing do-gooder startups like <a href="http://upworthy.com">Upworthy</a> and <a href="https://ethicalelectric.com/">Ethical Electric</a>.</li>
 	</ul>
 
-	<p>I live in San Francisco with the lovely Natalie Foster (<a href="http://twitter.com/nataliefoster">@nataliefoster</a>) and our baby boy. 	
+	<p>I live in San Francisco with the lovely Natalie Foster (<a href="http://twitter.com/nataliefoster">@nataliefoster</a>) and our baby boy.
+	</p>
+	<p>Some of my other homes on the interwebs:</p>
+	<h1>
+		<a href="https://www.linkedin.com/in/mattewing"><i class="fa fa-linkedin fa-1x"></i></a>
+		<a href="https://github.com/mattewing"><i class="fa fa-github fa-1x"></i></a>
+		<a href="https://angel.co/matt-ewing"><i class="fa fa-angellist fa-1x"></i></a>
+	</h1>
+
+
 	<hr>
 	<h1>About This Site</h1>
 	<p>I build this site from scratch as part of an effort to increase my basic web skills. It's fully repsonsive and made with hand coded HTML and CSS, with a little bit of javascript and jQuery thrown in for good measure. It's hosted on GitHub, along with <a href="https://github.com/mattewing/simple-personal-page">an easy-to-use template for creating personal sites like this one.</a></p> 
 
 	<p>The blog is a Jekyl template that I borrowed almost entirely from <a href="https://github.com/barryclark/jekyll-now">Barry Clark's Jekyll Now project</a>--which is an awesome resource if you're looking to put together a simple Jekyl blog.</p>
 
-	<p>Most icons are from the <a href="http://www.thenounproject.com">Noun Project</a>. Thanks to<a href="http://www.thenounproject.com/dracoplayr"> Ash N for the wrench</a> and<a href="http://www.thenounproject.com/tuktuk"> TukTuk Design for the profile icon.</a>
+	<p>Icon's courtesy of <a href="http://fontawesome.io">Font Awesome</a> by Dave Gandy--which is indeed awesome.</p>
 
+	
 		
 </div>
 
@@ -112,16 +108,16 @@
 //Nav toggle for mobile, triggered by menu click
 
 $('header').click(function() {
-	$('.nav_wrapper').toggle();		
+	$('nav').toggle();		
 });
 
 //Resizing the content space, based on menu being present
 $('header').click(function() {
-	if ($(".nav_wrapper").css("display") == "none"){
+	if ($("nav").css("display") == "none"){
 		$(".container").css("width", "90%");
 	}
 
-	else if ($(".nav_wrapper").css("display") == "block"){
+	else if ($("nav").css("display") == "block"){
 		$(".container").css("width", "70%");
 	}
 

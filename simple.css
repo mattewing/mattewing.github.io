@@ -8,19 +8,9 @@
 	 
 }
 
-.icon img{
-	max-width: 25%;
-	vertical-align: middle;
-	margin-right: 0%;
-	min-height: 65px;
-	min-width: 65px;
-
-}
-
 .icon{
 	display: inline-block;
 	width: 30%;
-	height: 25%;
 	margin-bottom: 5%;
 	margin-top: 7%;
 	text-align: center;
@@ -51,30 +41,11 @@ footer{
 .bio_bar{
 	width: 90%;
 	margin: 2%;
-	height: 100%;
-	
-
 }
-.icon img{
-	max-width: 35%;
-	vertical-align: middle;
-	margin-right: 2%;
 
-
-
-}
 .icon{
-	display: inline-block;
 	width: 60%;
-	height: 30%;
-	margin-bottom: 5%;
-	vertical-align: top;
-	margin-top: 7%;
 
-
-}
-html, body {
-	margin:0%;
 }
 
 h1{
