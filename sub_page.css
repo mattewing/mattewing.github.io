@@ -1,21 +1,17 @@
 /* Header */
 
 header{
-
-	background: white;
 	display:none;
 	height: 7%;
 	width: 100%;
 	cursor: pointer;
-	text-align: left;
 	margin: 0%;
-	border: 1px solid silver;
 	position: fixed;
 	left: 0;
-	right: 0;
+
 }
 header .fa{
-	margin-top: 2%;
+	margin-top: 3%;
 	margin-bottom: 2%;
 	margin-left: 4%;
 	font-size: 1.5em;
@@ -24,39 +20,22 @@ header .fa{
 /* Nav Bar */
 
 nav{
-	margin-top: 0%;
-	width:100%;
 	text-align: left;
-	width:17%;
 	float:left;
 	font-size: 25px;
 	padding-left: 3%;
-	padding-top:5%;
-}
-
-
-nav .icon{
-	display: inline-block;
-	width: 100%;
-	height: 30%;
-	padding-bottom: 15%;
-	padding-top: 15%;
-
-}
-
-.fa{
-	vertical-align: middle;
+	padding-top: 5%;
+	line-height: 4em;
+	height:auto;
+	position: fixed;
 }
 
 /* Main content */
 .container {
-	float:left;
-	width: 70%;
-	height: 100%;
-	min-height: 100%;
+	float:right;
+	width: 60%;
 	border-left: 1px solid black;
-	top: 0;
-    bottom: 0;
+	margin-right: 20%
 
 }
 
@@ -76,7 +55,8 @@ nav .icon{
 	margin-right: 5%;
 	font-size: 1.75em;
 	text-align: center;
-	color:gray;
+	color: #8d8989;
+
 }
 
 li{ 
@@ -102,8 +82,15 @@ hr{
 	margin-right: auto;
 	margin-left: auto;
 	display: block;
-	
-	
+}
+
+.fa-home{
+	color: #2B2E31;
+}
+
+.fa-bars{
+	color: #336699;
+
 }
 
 /* Ipad*/
@@ -111,10 +98,12 @@ hr{
 	.nav_text{
 		display: none;
 	}
-	.icon{
-		margin-left: 10%
+
+	nav{
+		padding-left: 6%;
 	}
 }
+
 /* Mobile*/
 @media all and (max-width: 600px) {
 	header{
@@ -132,61 +121,48 @@ hr{
 		width:25%;
 	}
 
-
-	nav .icon{
-		width: 80%;
-		height: 80%;
-		margin-bottom:30%;
-		margin-left: 10%;
-	}
-
 	.container{	
-		height: 100%;
-		min-height: 100%;
-		float:left;
-		margin-top:15%;
-    	bottom: 0;
-    	width: 90%;
+		float:right;
+		width: 90%;
+		margin-right: 10%;
    
 	}
-	.container p{
+	.container p, li{
 		font-size: 14px;
-
 	}
+	
 	h1{
 		font-size: 20px;
 	}
 	
-
-
 	li{ 
 	margin-left:0%;
 	margin-bottom: 2.5%;
-	font-size: 14px;
+	}
+	
+	.container img{
+		margin-top: 20%;
 	}
 }
 
-}
 /* End of Mobile*/
 
-.container a{
-	text-decoration: none;
-	color: #336699;
-
-}
 
 
 body, a{
 	
-	color: black;
-	background: white;
 	font-family: 'Varela', sans-serif;
 	font-weight: 300;
 	text-decoration: none;
+	color: #8d8989;
 }	
 
 .container a {
-	color:#336699;"
+	color:#336699;
+}
+
+a:hover{
+	color: white;
 }
 
 }
@@ -195,10 +171,16 @@ h1,h2{
 	font-weight: 800;	
 }
 
-body{
+img {
+	filter: grayscale(50%);
+	-webkit-filter: grayscale(50%);
+}
+
+body,html{
 	margin: 0%;
 	display: inline-block !important;
 	width: 100%;
+	background: #2B2E31;
 }
 
 
