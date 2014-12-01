@@ -1,6 +1,7 @@
 
 /* Side bar with icons and bio */
-.bio_bar{
+
+main{
 	width: 40%;
 	padding-left: 5%;
 	float: left;
@@ -10,16 +11,15 @@
 
 .icon{
 	display: inline-block;
-	width: 30%;
-	margin-bottom: 5%;
-	margin-top: 7%;
-	text-align: center;
+	width: 20%;
+	margin-top: 8%;
+	margin-left: 3%;
 }
 
 
 /*Footer*/
 footer{
-	color: rgb(141, 137, 137);
+	color: #8d8989;
 	font-size: 14px;
 	text-align: center;
 	width: 100%;
@@ -30,7 +30,7 @@ footer{
 
 /*ipad */
 @media all and (max-width: 850px) {
-.bio_bar{
+main{
 	width:65%;
 }
 }
@@ -38,13 +38,13 @@ footer{
 /*Mobile */
 
 @media all and (max-width: 600px) {
-.bio_bar{
+main{
 	width: 90%;
 	margin: 2%;
 }
 
 .icon{
-	width: 60%;
+	width: 40%;
 
 }
 
@@ -92,3 +92,6 @@ strong{
 	color: #336699;
 }
 
+a:hover{
+	color: white;
+}

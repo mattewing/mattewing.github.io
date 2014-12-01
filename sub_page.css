@@ -28,36 +28,44 @@ nav{
 	line-height: 4em;
 	height:auto;
 	position: fixed;
+	
+}
+.fa-home, .fa-wrench{
+	color: #2B2E31;
+	font-size: 1.25em;
+}
+
+.fa-bars{
+	color: #336699;
+
 }
 
 /* Main content */
+p, h1, h2, li, img{
+	margin-left: 5%	
+}
+
 .container {
 	float:right;
 	width: 60%;
 	border-left: 1px solid black;
-	margin-right: 20%
+	margin-right: 20%;
+	/*box-shadow: -10px 10px 3px #000000;*/
 
 }
 
-.container h1, h2 {
+.container h1{
 	text-align: center;
-	font-size: 30px
+	font-size: 40px;
+	color: white;
 }
 
-.container p{
-	text-align: left;
+.container h2{
+	font-size: 25px;
+	color: white;
 	margin-left: 5%;
-	font-size: 16px;
 }
 
-.container .fa {
-	margin-left: 5%;
-	margin-right: 5%;
-	font-size: 1.75em;
-	text-align: center;
-	color: #8d8989;
-
-}
 
 li{ 
 	margin-left:3%;
@@ -69,28 +77,36 @@ hr{
 	margin: 7%
 }
 
+/*About page specific*/
 .bio_pic img{
-	width: 150px;
-	margin-top:5%;
-	/*left side
-	float:right;
-	margin-left: auto;
-	margin-right: 10;
-	*/
-	
-	/*center*/
-	margin-right: auto;
-	margin-left: auto;
-	display: block;
+	height: 150px;
+	filter: grayscale(50%);
+	-webkit-filter: grayscale(50%);
 }
 
-.fa-home{
-	color: #2B2E31;
+.bio_pic{
+	text-align: center;
+	margin-top: 5%
 }
 
-.fa-bars{
-	color: #336699;
+.container .fa{
+	color: #8d8989;
+	margin-left:2%;
+	margin-right: 2%;
+}
 
+/*Project page specific*/
+.project img{
+	width: 30%;
+	margin: 1%;
+}
+.project_img{
+	text-align: center;
+}
+
+.twitter-tweet, .twitter-tweet-rendered{
+	margin-right: auto !important;
+	margin-left: auto !important;
 }
 
 /* Ipad*/
@@ -139,14 +155,14 @@ hr{
 	margin-left:0%;
 	margin-bottom: 2.5%;
 	}
-	
-	.container img{
+
+/* Page specific */
+	.bio_pic img{
 		margin-top: 20%;
 	}
 }
 
 /* End of Mobile*/
-
 
 
 body, a{
@@ -171,10 +187,6 @@ h1,h2{
 	font-weight: 800;	
 }
 
-img {
-	filter: grayscale(50%);
-	-webkit-filter: grayscale(50%);
-}
 
 body,html{
 	margin: 0%;
