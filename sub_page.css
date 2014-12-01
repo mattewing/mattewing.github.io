@@ -50,7 +50,8 @@ p, h1, h2, li, img{
 	width: 60%;
 	border-left: 1px solid black;
 	margin-right: 20%;
-	/*box-shadow: -10px 10px 3px #000000;*/
+	/*box-shadow: -10px 10px 3px #000000;*/;
+	padding-bottom: 8%;
 
 }
 
