@@ -1,0 +1,50 @@
+---
+layout: default
+---
+
+
+
+<main>
+
+<div class ="blog_head">
+	<h1> Matt's blog </h1>
+	<p>Thoughts on technology, startups and making the world a better place. Occasional detours to fatherhood and half-baked makers projects.</p>
+	<p>For the 140 character version, <a href="http://twitter.com/mattewing">follow me on twitter.</a></p>
+
+	<hr>
+</div>
+
+<article>
+  <h1>{{ page.title }}</h1>
+
+  <div class="entry">
+    {{ content }}
+  </div>
+
+ </article>
+</main>
+
+<!-- Sharing tools from AddThis -->
+
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-546ce5de4278553f" async="async"></script>
+    <script type="text/javascript">
+      var addthis_share = addthis_share || {}
+      addthis_share = {
+        passthrough : {
+          twitter: {
+            via: "mattewing",
+            text: "{{ page.title }}"
+    }
+  }
+}
+</script>
+
+
+ <!--
+ To do:
+ [x] CSS styling
+ [] Fix menu bar links
+ [] Add subscription option
+ [x] Add social media share stuff
+ [] Disqus
+-->
