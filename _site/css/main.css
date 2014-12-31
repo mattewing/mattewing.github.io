@@ -4,7 +4,7 @@
 html, body{
 	margin: 0%;
 	padding: 0%;
-	height: 100%;
+	min-height: 100%;
 	background: #2B2E31;
 }
 
@@ -244,7 +244,11 @@ li{
 }
 
 .blog_head h1 {
-	font-size: 36pxß;
+	font-size: 36px;
+}
+
+.blog_head h1 a{
+	color: white;
 }
 
 .blog_head a{
@@ -285,6 +289,34 @@ article hr {
 article a:hover{
 	color: inherit;
 }
+
+article img {
+	text-align: center;
+	float: none;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+article strong {
+	color: black;
+	font-size: 1em;
+	font-weight: 900;
+}
+
+article h2 {
+	color: black;
+}
+
+article blockquote {
+
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 50px;
+  padding-left: 15px;
+  border-left: 3px solid #ccc; 
+}
+
 
 /* Ipad-ish devices */
 
@@ -336,7 +368,7 @@ nav{
 }
 
 #page1{
-	height: 90%;
+	min-height: 90%;
 }
 
 .about_icons{

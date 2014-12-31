@@ -3,7 +3,7 @@
   <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
   
   <!--Meta: title, description, author, etc-->
-  <title>{{page_title}}</title>
+  <title>{{page.title}}</title>
 
   {% if page.description %}
     <meta name="description" content="{{ page.description | truncatewords: 200 | strip_newlines | escape_once }}" />
@@ -33,7 +33,7 @@
 
   {% endif %}
 
-  <meta property="og:title" content="{{page_title}}" />
+  <meta property="og:title" content="{{page.title}}" />
   
   {% if page.description %}
     <meta name="og:description" content="{{ page.description | truncatewords: 200 | strip_newlines | escape_once }}" />
@@ -43,8 +43,6 @@
 
    {% if page.image %}
     <meta property="og:image" content="/assets/{{ page.image }}" />
-    {% else %}
-    <meta property="og:image" content="http://mattewing.org/assets/scoot_head_shot.jpg" />  
     {% endif %}
 
     <!-- Scripts -->
