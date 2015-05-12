@@ -20,8 +20,11 @@ image: bio.jpg
 <div class = "text" id = "blog">
 <div class = "blog_box">
 <h2><a href="blog/">Recent Blog Posts </a></h2>
-  {% for post in site.posts limit:3 %}
+  {% for post in site.posts %}
+  {% if post.frontpage = 'yes' %}
       <p><a href="{{ post.url }}">{{ post.title }}</a></p>
+  {% endif %}
+  
   {% endfor %}
 
 
